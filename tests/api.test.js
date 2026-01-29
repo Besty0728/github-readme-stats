@@ -17,7 +17,7 @@ import { renderError } from "../src/common/render.js";
 import { CACHE_TTL, DURATIONS } from "../src/common/cache.js";
 
 /**
- * @type {import("../src/fetchers/stats").StatsData}
+ * @type {import("../src/fetchers/types").StatsData}
  */
 const stats = {
   name: "Anurag Hazra",
