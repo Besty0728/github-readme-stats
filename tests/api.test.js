@@ -208,7 +208,7 @@ describe("Test /api/", () => {
   });
 
   it("should set proper cache", async () => {
-    const cache_seconds = DURATIONS.TWELVE_HOURS;
+    const cache_seconds = DURATIONS.ONE_DAY;
     const { req, res } = faker({ cache_seconds }, data_stats);
     await api(req, res);
 
