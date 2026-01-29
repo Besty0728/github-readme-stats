@@ -595,6 +595,9 @@ const renderStatsCard = (stats, options = {}) => {
         direction: "column",
       }).join("")}
     </svg>
+    <text x="${width - 10}" y="${height - 10}" text-anchor="end" font-size="10" fill="${textColor}" opacity="0.3" font-family="Segoe UI, Ubuntu, Sans-Serif">
+      Refreshed: ${new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })}
+    </text>
   `);
 };
 

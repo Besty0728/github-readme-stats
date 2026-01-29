@@ -186,6 +186,10 @@ const renderRepoCard = (repo, options = {}) => {
     <g transform="translate(30, ${height - 75})">
       ${starAndForkCount}
     </g>
+
+    <text x="390" y="${height - 10}" text-anchor="end" font-size="10" fill="${colors.textColor}" opacity="0.3" font-family="Segoe UI, Ubuntu, Sans-Serif">
+      Refreshed: ${new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })}
+    </text>
   `);
 };
 
